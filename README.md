@@ -1,5 +1,5 @@
 # 用途
-用于绕过运营商屏蔽 
+用于绕过国内移动线路的运营商屏蔽
 # 将上面代码下载保存到服务器，然后执行下面命令安装依赖
 yum install -y python3 python3-devel gcc gcc-c++ git libnetfilter* libffi-devel
 
