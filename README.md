@@ -7,6 +7,8 @@ pip3 install --upgrade pip
 
 pip3 install scapy netfilterqueue
 # 运行程序
+git clone https://github.com/milk192/pygeneva.git
+
 nohup python3 geneva.py -q 100 -w 4 &
 
 iptables -I OUTPUT -p tcp -m multiport --sports 80,443 --tcp-flags SYN,RST,ACK,FIN,PSH SYN,ACK -j NFQUEUE --queue-num 100
