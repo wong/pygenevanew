@@ -6,7 +6,7 @@ from scapy.all import *
 from netfilterqueue import NetfilterQueue
 import argparse
 
-window_size = 6
+window_size = 20
 
 def modify_window(pkt):
     try:
